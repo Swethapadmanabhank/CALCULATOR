@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <!-- <div class="calculation">
+            <input id="previous" class="calculation-display" type="text" placeholder="0">
+        </div> -->
+        <div id="input">
+            <input id="output" class="main-display" type="text" placeholder="0">
+        </div>
+        <div class="button">
+            <div class="row">
+                <button onclick="clearAll()" id="clear" class="btn-light">CL</button>
+                <button onclick="removeLast()" id="delete" class="btn-light">DEL</button>
+                <button onclick="display('%')" id="percentage" class="btn-light">%</button>
+                <button onclick="display('/')" id="divide" class="btn-light">/</button>
+            </div>
+            <div class="row">
+                <button onclick="display(7)" id="seven" class="btn-number">7</button>
+                <button onclick="display(8)" id="eight" class="btn-number">8</button>
+                <button onclick="display(9)" class="btn-number">9</button>
+                <button onclick="display('*')" class="btn-number btn-light">*</button>
+            </div>
+            <div class="row">
+                <button onclick="display(4)" class="btn-number">4</button>
+                <button onclick="display(5)" class="btn-number">5</button>
+                <button onclick="display(6)" class="btn-number">6</button>
+                <button onclick="display('-')" class="btn-number btn-light">-</button>
+            </div>
+            <div class="row">
+                <button onclick="display(1)" class="btn-number">1</button>
+                <button onclick="display(2)" class="btn-number">2</button>
+                <button onclick="display(3)" class="btn-number">3</button>
+                <button onclick="display('+')" class="btn-number btn-light">+</button>
+            </div>
+            <div class="row">
+                <button onclick="display(0)" class="btn-number bblr">0</button>
+                <button onclick="display('.')" class="btn-number">.</button>
+                <button onclick="evaluateExp()" class="btn-number bbrr" id="btn-equal">=</button>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="./calcu.js">
+
+</script>
+
+</html>
